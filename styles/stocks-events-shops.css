@@ -1,0 +1,192 @@
+.stocks, 
+.events, 
+.shops {
+    padding: 32px 64px;
+    min-width: 1312px;
+}
+
+.stocks__heading, 
+.events__heading, 
+.shops__heading {
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--dark-grey);
+}
+
+.stocks__items, 
+.events__items, 
+.shops__items {
+    display: flex;
+    margin-top: 32px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+.stocks__item, 
+.events__item, 
+.shops__item {
+    list-style-type: none;
+    position: relative;
+    width: 640px;
+    height: 360px;
+}
+
+.stocks__item__link, 
+.events__item__link, 
+.shops__item__link {
+    text-decoration: none;
+}
+
+.stocks__item__image, 
+.events__item__image, 
+.shops__item__image {
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.stocks__item__span, 
+.events__item__span, 
+.shops__item__span {
+    display: block;
+    position: absolute;
+    width: 100%;
+	height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 16px;
+}
+
+.stocks__icons, 
+.events__icons, 
+.shops__icons{
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    margin-top: -328px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left__icons {
+    display: flex;
+    gap: 8px;
+}
+
+.stocks__item__discount, 
+.events__item__discount, 
+.events__item__date, 
+.events__item__time, 
+.events__item__discount,
+.shops__item__opened-last,
+.shops__item__opened-time {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.stocks__item__discount {
+    width: 85px;
+}
+
+.events__item__discount {
+    width: 90px;
+}
+
+.stocks__item__heading, 
+.events__item__heading, 
+.shops__item__heading {
+    position: absolute;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    width: 560px;
+    margin-left: 32px;
+}
+
+.stocks__item__heading {
+    margin-top: -112px;
+}
+
+.events__item__heading, 
+.shops__item__heading {
+    margin-top: -70px;
+}
+
+.events__item__date {
+    width: 70px;
+}
+
+.events__item__time {
+    width: 55px;
+}
+
+.events__item__discount {
+    width: 90px;
+}
+
+.events__item__status-soon, 
+.shops__item__status {
+    background: #FEDD2C;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--dark-grey);
+}
+
+.events__item__status-soon {
+    margin-left: 355px;
+    width: 45px;
+}
+
+.events__item__status-last {
+    background: #727272;
+    margin-left: 286px;
+    border-radius: 8px;
+    width: 80px;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+.events__button {
+    margin-top: 32px;
+    width: 1312px;
+    padding: 16px 24px;
+    border: 2px solid var(--dark-grey);
+    border-radius: 16px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 18px;
+    color: #1C1C1C;
+    background-color: transparent;
+    transition: color 0.2s ease;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.events__button:hover {
+    background-color: var(--dark-grey);
+    color: white;
+}
+
+.shops__item__opened-last {
+    width: 160px;
+}
+
+.shops__item__opened-time {
+    width: 115px;
+}
+
+.shops__item__status {
+    width: 55px;
+}

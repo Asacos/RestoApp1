@@ -1,0 +1,137 @@
+.header {
+   width: 100%;
+}
+
+.bubble {
+    display: flex;
+    background: var(--dark-grey);
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.bubble__button {
+    background: transparent;
+    border: none;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.header__content {
+    display: flex;
+    background: var(--header-gradient);
+    justify-content: center;
+    align-items: center;
+    min-width: 1440px;
+    height: 80px;
+}
+
+.logo {
+    margin-right: 181px;
+}
+
+.navigation {
+    padding: 0 16px;
+    color: #555555;
+}
+
+.navigation__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.navigation__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #555555;
+    transition: color 0.2s ease;
+}
+
+.navigation__link:hover {
+    color: var(--dark-grey);
+}
+
+.address {
+    text-align: right;
+    margin-left: 181px;
+    margin-right: 64px;
+    padding: 20px 0;
+}
+
+.address__tel {
+    text-decoration: none;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    color: #555555;
+    transition: color 0.2s ease;
+}
+
+.address__tel:hover {
+    color: var(--dark-grey);
+}
+
+.address__text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #555555;
+}
+
+.header__icons {
+    padding: 16px 0;
+    display: flex;
+    gap: 16px;
+}
+
+.profile {
+    border: 2px solid var(--dark-grey);
+    width: 52px;
+    height: 44px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.profile:hover {
+    background: var(--dark-grey);
+}
+
+.profile__icon {
+    transition: filter 0.2s ease;
+}
+
+.profile:hover .profile__icon {
+    filter: brightness(0) invert(1);
+}
+
+.basket {
+    border: 2px solid var(--dark-grey);
+    width: 52px;
+    height: 44px;
+    border-radius: 16px;
+    background: var(--dark-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.basket:hover {
+    background: white;
+}
+
+.basket__icon {
+    transition: filter 0.2s ease;
+}
+
+.basket:hover .basket__icon {
+    filter: brightness(0);
+}
